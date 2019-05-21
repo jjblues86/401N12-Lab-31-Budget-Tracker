@@ -12,7 +12,6 @@ export default class CategoryForm extends React.Component {
         this.setState({name: value});
     };
     handleSubmit = (event) => {
-        console.log('yay');
         event.preventDefault();
 
         this.props.onComplete(this.state);

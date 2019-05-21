@@ -4,23 +4,21 @@ import { createCategory } from './action/category-actions';
 
 import  CategoryForm from './component/category-form';
 
-
-
  class App extends React.Component {
     render(){
         return(
             <div>
-              <CategoryForm onComplete={this.props.mappedCategoryCreate}/>
-                  {this.props.categories.map(current => <p>{current.name}</p>)}
+            <CategoryForm onComplete={this.props.mappedCategoryCreate}/>
+                { this.props.categories.map(current => <p>{current.title}</p>)}
             </div>
-        )
+    )
     }
 }
 
 const mapStateToProps = (state) => {
      // Jerome - anything I return here will become props
      return {
-         categories: state,
+         categories: state.categories,
      }
 };
 const mapDispatchToProps = (dispatch) => {
