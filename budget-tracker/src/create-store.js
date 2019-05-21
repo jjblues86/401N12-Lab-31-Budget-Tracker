@@ -1,6 +1,8 @@
 import { createStore } from 'redux';
-import createReducer from './reducer/category-reducer';
+import mainReducer from './reducer/main-reducer';
+import { composeWithDevTools } from 'redux-devtools-extension';
+
 
 export default () => {
-    return createStore(createReducer);
+    return createStore(mainReducer, composeWithDevTools());
 }
