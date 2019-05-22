@@ -1,4 +1,4 @@
-# 401N12-Lab-31-Budget-Tracker
+# 401N12-Lab-31-32-Budget-Tracker
 ![CF](http://i.imgur.com/7v5ASc8.png) LAB
 =================================================
 ### Author: Jerome Joof
@@ -11,8 +11,9 @@
 
 ## Components
 * category-form.js
+* category-item.js
 ## render
-
+* budget item
 
 ## Available Scripts
 
