@@ -5,7 +5,7 @@ export default class CategoryForm extends React.Component {
         super(props);
         this.state = {
             name: '',
-            // price: '',
+            price: '',
         };
     }
     handleChange = (event) => {
