@@ -5,12 +5,15 @@ export default class CategoryForm extends React.Component {
         super(props);
         this.state = {
             name: '',
+            // price: '',
         };
     }
     handleChange = (event) => {
         const {value} = event.target;
         this.setState({name: value});
-    };
+
+
+    } ;
     handleSubmit = (event) => {
         event.preventDefault();
 
@@ -26,6 +29,13 @@ export default class CategoryForm extends React.Component {
                     value={this.state.name}
                     onChange={this.handleChange}
                     placeholder="name"
+                />
+                <input
+                    type="number"
+                    name="price"
+                    value={this.state.price}
+                    onChange={this.handleChange}
+                    placeholder="price"
                 />
                 <button type="submit">Create Category</button>
             </form>
